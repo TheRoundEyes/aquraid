@@ -1,1 +1,10 @@
 streamlit
+Pillow
+PyMuPDF
+pytesseract
+python-docx
+langchain
+openai
+pymupdf
+langchain-community
+streamlit-pdf-viewer
