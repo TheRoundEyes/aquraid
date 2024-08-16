@@ -116,7 +116,7 @@ if openai_api_key:
     # Streamlit UI
     st.title("Aquraid")
 
-    col1, col2,col3 = st.columns(2)
+    col1, col2, col3 = st.columns(3)
 
     with col1:
         uploaded_file_1 = st.file_uploader("Upload the Job Description", type=["pdf", "docx", "txt"], key="file1")
