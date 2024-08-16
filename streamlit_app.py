@@ -116,7 +116,7 @@ if openai_api_key:
     # Streamlit UI
     st.title("Aquraid")
 
-    col1, col2 = st.columns(2)
+    col1, col2,col3 = st.columns(2)
 
     with col1:
         uploaded_file_1 = st.file_uploader("Upload the Job Description", type=["pdf", "docx", "txt"], key="file1")
@@ -181,7 +181,7 @@ if openai_api_key:
                 uploaded_file_1.seek(0)  # Reset file pointer before displaying
                 text_1 = extract_text_from_docx(uploaded_file_1)
                 display_docx_content(text_1, "1")
-
+    with col3:
         if uploaded_file_2:
             if uploaded_file_2.type == "application/pdf":
                 st.write("Displaying the second PDF:")
