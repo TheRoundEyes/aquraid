@@ -175,7 +175,7 @@ if openai_api_key:
                 st.write("Displaying the first PDF:")
                 uploaded_file_1.seek(0)  # Reset file pointer before displaying
                 pdf_bytes_1 = uploaded_file_1.read()  # Convert to bytes
-                pdf_viewer(pdf_bytes_1, height=1000, key="pdf_viewer_1")  # Unique key for the first PDF
+                pdf_viewer(pdf_bytes_1, height=1000,width=600, key="pdf_viewer_1")  # Unique key for the first PDF
             elif uploaded_file_1.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
                 st.write("Displaying the first DOCX:")
                 uploaded_file_1.seek(0)  # Reset file pointer before displaying
@@ -187,7 +187,7 @@ if openai_api_key:
                 st.write("Displaying the second PDF:")
                 uploaded_file_2.seek(0)  # Reset file pointer before displaying
                 pdf_bytes_2 = uploaded_file_2.read()  # Convert to bytes
-                pdf_viewer(pdf_bytes_2, height=1000, key="pdf_viewer_2")  # Unique key for the second PDF
+                pdf_viewer(pdf_bytes_2, height=1000,width=600, key="pdf_viewer_2")  # Unique key for the second PDF
             elif uploaded_file_2.type == "application/vnd.openxmlformats-officedocument.wordprocessingml.document":
                 st.write("Displaying the second DOCX:")
                 uploaded_file_2.seek(0)  # Reset file pointer before displaying
