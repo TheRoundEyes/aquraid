@@ -1,19 +1,7 @@
-# 🎈 Blank app template
+# 🎈 Document Processing
 
-A simple Streamlit app template for you to modify!
+This app allows you to compare two documents and provides a detailed analysis of the differences between them. You can upload two documents in PDF, Or DOCx 
+format and the app will extract the text from the documents and compare them using the Langchain Language Model (LLM).
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://document-review.streamlit.app/)
 
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
