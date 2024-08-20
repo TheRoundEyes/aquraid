@@ -1,4 +1,4 @@
-# 🎈 Document Processing
+# 🎈 Document Review
 
 This app allows you to compare two documents and provides a detailed analysis of the differences between them. You can upload two documents in PDF, Or DOCx 
 format and the app will extract the text from the documents and compare them using the Langchain Language Model (LLM).
