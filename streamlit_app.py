@@ -13,6 +13,10 @@ from streamlit_pdf_viewer import pdf_viewer
 
 st.set_page_config(layout='wide',page_title='Document Review',page_icon=':pencil:')
 
+st.title('Document Review')
+st.write('This app allows you to compare two documents and provides a detailed analysis of the differences between them. You can upload two documents in PDF, Or DOCx '
+         'format and the app will extract the text from the documents and compare them using the Langchain Language Model (LLM).')
+
 openai_api_key = st.text_input('Enter your OPEN API Key here', type='password')
 
 # Initialize the OpenAI embeddings if API key is provided
