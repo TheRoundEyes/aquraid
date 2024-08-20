@@ -11,7 +11,7 @@ from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from streamlit_pdf_viewer import pdf_viewer
 
-st.set_page_config(layout='wide',page_title='Aquraid',page_icon=':pencil:')
+st.set_page_config(layout='wide',page_title='Document Review',page_icon=':pencil:')
 
 openai_api_key = st.text_input('Enter your OPEN API Key here', type='password')
 
@@ -37,22 +37,7 @@ if openai_api_key:
         **Key Differences:**
         1. Identify and list all the key differences between the two documents.
 
-        **Proposal Form Verification:**
-        1. Check if the proposal form is fully completed.
-        2. Check if the proposal form is signed and dated.
-        3. Verify if the date on the proposal form is prior to 30 days of the quotation.
-        4. Determine if the business description provided is meaningful and compare if it matches or is similar to the Policy Schedule.
-        5. Verify if turnover values for the current year, estimated next year, and previous year are declared. Display these values if present.
-
-        For each of the above checks, indicate:
-        - Yes/No for each point based on the content of the proposal form.
-
-        **Risk Location Verification:**
-        1. Verify if the proposal form contains a valid address.
-        2. Check if the policy schedule shows the same address as the proposal form.
-        3. Ensure that risk location details including factors like the location of properties, the policyholder’s usual residence, and the domicile of the company registration are accurately reflected.
-
-        Provide the results in a clear and structured format, including a summary, a comparison section, and specific details for each verification point."""
+       """
 
     )
 
